@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria Doce Sabor</title>
+    <link rel="stylesheet" href="restaurante.css">
+    <script src="./restaurante.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Doceria Doce Sabor</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Ícone do Carrinho -->
+        <div class="cart">
+            <a href="javascript:void(0);" onclick="toggleCart()">
+                <img id="cart-icon" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Carrinho">
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+        <div id="cart-details">
+            <ul id="cart-items"></ul>
+            <div class="cart-footer">
+                <p>Total: R$ <span id="cart-total">0.00</span></p>
+                <p>Frete: R$ <span id="cart-shipping">5.00</span></p>
+                <p>Total Final: R$ <span id="cart-final-total">0.00</span></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h2>Bem-vindo à Doceria Doce Sabor!</h2>
+        <p>Delícias feitas com amor e carinho.</p>
+        <button onclick="window.location.href='#menu'">Veja nosso Menu</button>
+    </section>
+
+    <section id="menu">
+        <h2>Nosso Menu</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./Imagens/Bolo-de-Chocolate-com-Recheio-.jpg" alt="Bolo de Chocolate">
+                <h3>Bolo de Chocolate</h3>
+                <p>Delicioso bolo de chocolate com recheio cremoso.</p>
+                <button class="add-to-cart" data-item="Bolo de Chocolate " data-price="49.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="./Imagens/cupcakes-dessert-sprinkles-cherries-food-wallpaper-preview.jpg" alt="Cupcake">
+                <h3>Cupcake</h3>
+                <p>O cupcake perfeito para qualquer ocasião.</p>
+                <button class="add-to-cart" data-item="Cupcake" data-price="9.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="card">
+                <img src="Imagens/Receita-de-Torta-de-Maca-Passo-a-Passo-para-uma-Torta-Perfeita.jpg" alt="Torta de Frutas">
+                <h3>Torta de Frutas</h3>
+                <p>Torta fresca com frutas da estação.</p>
+                <button class="add-to-cart" data-item="Torta de Maçã" data-price="69.90">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Doceria Doce Sabor nasceu da paixão por criar doces incríveis que deixam qualquer momento mais doce. Todos os nossos produtos são feitos com os melhores ingredientes e muito carinho.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Doceria Doce Sabor - Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://seuportfólio.com" target="_blank">Henrique Dennis</a></p>
+    </footer>
+</body>
+</html>

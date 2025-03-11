@@ -1,0 +1,180 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0d0d0d;;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #cccccc;
+}
+
+/* Projetos */
+.projeto {
+    background: #292929;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #005bb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.projeto a:hover {
+    background: transparent;
+    border: 1px, solid, #fff;
+    color: #005bb5;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #intro h2 {
+        font-size: 2rem;
+    }
+
+    #intro p {
+        font-size: 1.2rem;
+    }
+
+    #features h3 {
+        font-size: 1.8rem;
+    }
+
+    #features ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #features ul li {
+        font-size: 1.2rem;
+    }
+}
+
+/* Para tablets (telas médias) */
+@media (max-width: 1024px) {
+    header .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    #intro h2 {
+        font-size: 2.2rem;
+    }
+
+    #intro p {
+        font-size: 1.3rem;
+    }
+
+    #features h3 {
+        font-size: 1.9rem;
+    }
+
+    #features ul {
+        gap: 1.5rem;
+    }
+
+    #features ul li {
+        font-size: 1.3rem;
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    #intro h2 {
+        font-size: 2.5rem;
+    }
+
+    #intro p {
+        font-size: 1.4rem;
+    }
+
+    #features h3 {
+        font-size: 2rem;
+    }
+
+    #features ul {
+        gap: 2rem;
+    }
+
+    #features ul li {
+        font-size: 1.4rem;
+    }
+}

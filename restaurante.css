@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rouge Script", cursive;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: 400;
+}
+
+header {
+    background-color: #ff4081;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cart {
+    position: relative;
+    display: inline-block;
+}
+
+.cart img {
+    width: 30px; /* Ajuste conforme necessário */
+    height: auto;
+    cursor: pointer;
+}
+/* Seus estilos do CSS permanecem os mesmos */
+#cart-details {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 250px;
+    border-radius: 8px;
+    z-index: 100;
+    color: #e73869;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Ajuste no tamanho da contagem */
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#cart-items li {
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-footer {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#hero {
+    background-color: #ff80ab;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+#hero p {
+    font-size: 1.4rem;
+}
+#hero button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#menu {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card button.add-to-cart {
+    margin-top: 1rem;
+    width: 100%; /* Garante que o botão ocupe a largura total da card */
+    padding: 1rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card button.add-to-cart:hover {
+    background-color: #e73869;
+}
+
+#sobre, #contato {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+#contato label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: #ff4081;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    #menu h2 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        gap: 1rem;
+        flex-direction: column; /* Exibe os cards verticalmente */
+    }
+
+    .card {
+        width: 100%; /* Os cards ocupam toda a largura disponível */
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Para tablets (telas médias) */
+@media (max-width: 1024px) {
+    header .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1.3rem;
+    }
+
+    #menu h2 {
+        font-size: 1.9rem;
+    }
+
+    .cards {
+        gap: 1.5rem;
+    }
+
+    .card {
+        width: 45%; /* Os cards ocupam 45% da largura da tela */
+    }
+
+    .card p {
+        font-size: 1.3rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.4rem;
+    }
+
+    #menu h2 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        gap: 2rem;
+    }
+
+    .card {
+        width: 250px; /* Os cards mantêm 250px de largura */
+    }
+
+    .card p {
+        font-size: 1.3rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+}

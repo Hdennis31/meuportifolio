@@ -1,0 +1,191 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: white;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0d0d0d, #222);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #005bb5;
+}
+
+/* Seção de conteúdo */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0073e6;
+}
+
+.text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.text ul li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+li{
+    color: #005bb5;
+}
+li:hover{
+    color: #fff;
+}
+
+.image img {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Rodapé */
+footer {
+    background: #111;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 500px) {
+    header .logo h1 {
+        font-size: 1.2rem; /* Ajustar o tamanho do logo para telas muito pequenas */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem; /* Ajustar o tamanho do título */
+    }
+
+    #hero p {
+        font-size: 1.1rem; /* Ajustar o texto para ficar mais legível */
+    }
+
+    button {
+        padding: 0.9rem;
+        font-size: 1rem;
+        width: 90%; /* Deixar o botão mais largo */
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem; /* Reduzir um pouco o tamanho do título */
+        margin-bottom: 0.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 1rem;
+        width: 80%; /* Tornar o botão mais largo em telas pequenas */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    header .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1025px) {
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.4rem;
+    }
+}
