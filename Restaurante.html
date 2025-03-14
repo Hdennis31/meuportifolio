@@ -32,8 +32,10 @@
                 <p>Total: R$ <span id="cart-total">0.00</span></p>
                 <p>Frete: R$ <span id="cart-shipping">5.00</span></p>
                 <p>Total Final: R$ <span id="cart-final-total">0.00</span></p>
+                <button id="clear-cart" onclick="clearCart()">Limpar Carrinho</button> <!-- Botão para limpar o carrinho -->
             </div>
         </div>
+        
     </header>
 
     <section id="hero">
@@ -49,19 +51,26 @@
                 <img src="./Imagens/Bolo-de-Chocolate-com-Recheio-.jpg" alt="Bolo de Chocolate">
                 <h3>Bolo de Chocolate</h3>
                 <p>Delicioso bolo de chocolate com recheio cremoso.</p>
-                <button class="add-to-cart" data-item="Bolo de Chocolate " data-price="49.90">Adicionar ao Carrinho</button>
+                <div class="quantity-container">
+                    <button class="quantity-btn" onclick="updateQuantity(this, 'Bolo-de-Chocolate', -1)">-</button>
+                    <span class="quantity" id="quantity-Bolo-de-Chocolate">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity(this, 'Bolo-de-Chocolate', 1)">+</button>
+                </div>
+                <p>R$ <span class="price" data-price="49.90">49.90</span></p>
+                <button class="add-to-cart" data-item="Bolo de Chocolate" data-price="49.90">Adicionar ao Carrinho</button>
             </div>
-            <div class="card">
-                <img src="./Imagens/cupcakes-dessert-sprinkles-cherries-food-wallpaper-preview.jpg" alt="Cupcake">
-                <h3>Cupcake</h3>
-                <p>O cupcake perfeito para qualquer ocasião.</p>
-                <button class="add-to-cart" data-item="Cupcake" data-price="9.90">Adicionar ao Carrinho</button>
-            </div>
+            
             <div class="card">
                 <img src="Imagens/Receita-de-Torta-de-Maca-Passo-a-Passo-para-uma-Torta-Perfeita.jpg" alt="Torta de Frutas">
                 <h3>Torta de Frutas</h3>
                 <p>Torta fresca com frutas da estação.</p>
-                <button class="add-to-cart" data-item="Torta de Maçã" data-price="69.90">Adicionar ao Carrinho</button>
+                <div class="quantity-container">
+                    <button class="quantity-btn" onclick="updateQuantity(this, 'Torta-de-Frutas', -1)">-</button>
+                    <span class="quantity" id="quantity-Torta-de-Frutas">0</span>
+                    <button class="quantity-btn" onclick="updateQuantity(this, 'Torta-de-Frutas', 1)">+</button>
+                </div>
+                <p>R$ <span class="price" data-price="69.90">69.90</span></p>
+                <button class="add-to-cart" data-item="Torta de Frutas" data-price="69.90">Adicionar ao Carrinho</button>
             </div>
         </div>
     </section>
@@ -89,7 +98,7 @@
 
     <footer>
         <p>&copy; 2025 Doceria Doce Sabor - Todos os direitos reservados.</p>
-        <p>Desenvolvido por <a href="https://seuportfólio.com" target="_blank">Henrique Dennis</a></p>
+        <p>Desenvolvido por <a href="https://hdennis31.github.io/meuportifolio/" target="_blank">Henrique Dennis</a></p>
     </footer>
 </body>
 </html>
