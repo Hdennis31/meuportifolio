@@ -4,59 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="./Portifolio.css">
-    <link hel="stylesheet" href="C:\Users\Administrador\Desktop\Projetos VSCode\PASTA-MODELO-SITES\Midia\FontAwesome\css\all">
+    <link rel="stylesheet" href="Portifolio.css">
 </head>
-
 <body>
     <header>
-        <h1>Henrique - Desenvolvedor Front-End</h1>
-        <div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0L1 6v12l11 6 11-6V6L12 0zm9 16.9l-9 4.9-9-4.9V7.1l9-4.9 9 4.9v9.8z"/>
+                <path d="M12 4L5 8v8l7 4 7-4V8l-7-4zm5 11.7l-5 2.9-5-2.9V8.3l5-2.9 5 2.9v7.4z"/>
+            </svg>
+            <span>Portifolio</span>
         </div>
+       
     </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor front-end em início de carreira, apaixonado por criar sites modernos, responsivos e de alta performance. Trabalho com HTML e CSS para transformar ideias em experiências visuais envolventes, sempre focando em usabilidade, acessibilidade e design elegante. Meu compromisso é entregar soluções bem estruturadas e otimizadas para garantir que seu site não tenha apenas uma ótima aparência, mas também funcione perfeitamente em qualquer dispositivo.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h4>Olá, eu sou</h4>
+            <h1>Henrique Dennis</h1>
+            <h3>Desenvolvedor</h3>
+            <p>Sou um desenvolvedor front-end em início de carreira, apaixonado por criar sites modernos, responsivos e de alta performance. Trabalho com HTML e CSS para transformar ideias em experiências visuais envolventes, sempre focando em usabilidade, acessibilidade e design elegante. Meu compromisso é entregar soluções bem estruturadas e otimizadas para garantir que seu site não tenha apenas uma ótima aparência, mas também funcione perfeitamente em qualquer dispositivo.</p>
+            
+            <div class="whatsapp-box">
+                <a href="https://wa.me/5581998771077" target="_blank">
+                    Faça um Orçamento
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hexagon">
+                <img src="./Imagens/ilustraçao.jpg" alt="ilustraçao.jpeg">
+            </div>
+        </div>
     </section>
+    <section class="services">
+        <div class="section-title">
+            <h4>Meu Serviço</h4>
+            <h2>O que eu faço:</h2>
+        </div>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Doce Sabor</h3>
+        <div class="services-grid">
+            <a href="ux-design.html" class="service-card">
+                <div class="service-icon">
+                    <!-- Icon placeholder -->
+                </div>
+                <h3>Doce Sabor</h3>
             <p>Uma página fictícia para uma loja de doces.</p>
-            <a href="./Restaurante.html" target="_blank">Ver Projeto</a>
-        </div>
-        <div class="projeto">
-            <h3>Confira nosso E-book gratuito</h3>
+            <a href="./Restaurante.html" target="_blank"></a>
+            </a>
+
+            <a href="graphic-design.html" class="service-card">
+                <div class="service-icon">
+                    <!-- Icon placeholder -->
+                </div>
+                <h3>Confira nosso E-book gratuito</h3>
             <p>Conheça e entenda e seja imtroduzido ao HTML e CSS.</p>
-            <a href="./e-books.html" target="_blank">Ver Projeto</a>
+            <a href="./e-books.html" target="_blank"></a>
+            </a>
+
         </div>
     </section>
-
-    <div class="whatsapp-box">
-        <a href="https://wa.me/5581998771077" target="_blank">
-            Faça um Orçamento
-        </a>
-    </div>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <p>E-mail: dennis31albuquerque@gmail.com</p>
-        <p>WhatsApp: (81) 99877-1077</p>
+        <div class="section-title">
+            <h4>Vamos conversar?</h4>
+            <h2>Entre em contato:</h2>
+        </div>
+        <div class="contact-info">
+            <p>E-mail: <a href="mailto:dennis31albuquerque@gmail.com">dennis31albuquerque@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5581998771077" target="_blank">(81) 99877-1077</a></p>
+        </div>
     </section>
-
-    <footer>
-        <p>© 2025 Henrique. Todos os direitos reservados.</p>
-    </footer>
-
     
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Henrique. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+
+    <script src="Portifolio.js"></script>
 </body>
 </html>
